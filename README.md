@@ -8,3 +8,6 @@
 
 
 ## 사용 스택
+
+## 라이브러리 설치
+sass를 설치 : `npm install sass`
