@@ -1,0 +1,35 @@
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    z-index: 1000;
+    background-color: var(--black100);
+}
+#main {
+    max-width: 2000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-left: 260px;
+    background-color: #fbfbfb;
+    color: var(--black);
+}
+#footer {
+    text-align: center;
+    border-top: 1px solid var(--white300);
+    background-color: var(--white100);
+    padding: 10px 10px 10px 260px;
+    color: var(--black);
+
+    a {
+        color: var(--black300);
+        padding: 10px 20px;
+        display: inline-block;
+
+        &:hover {
+            @include underline;
+            text-decoration-color: var(--black300);
+        }
+    }
+}
