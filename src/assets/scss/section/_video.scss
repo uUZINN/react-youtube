@@ -1,0 +1,121 @@
+.video__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    justify-content: space-between;
+
+    .video {
+        margin-bottom: 50px;
+        background-color: var(--white200);
+        border-radius: 10px;
+        overflow: hidden;
+
+        .video__thumb {
+
+            a {
+                display: block;
+                cursor: pointer;
+                width: 100%;
+                padding-bottom: 56.25%;
+                background-size: cover;
+                background-position: center;
+            }
+
+        }
+
+        .video__info {
+            padding: 20px;
+
+            .title {
+                font-size: 17px;
+                font-weight: bold;
+                min-height: 51px;
+                @include line(2);
+            }
+            .desc {
+                font-size: 14px;
+                margin: 5px 0 15px;
+                min-height: 63px;
+                @include line(3);
+            }
+            .info {
+                font-size: 14px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .author {
+                    @include line-on;
+                    width: 50%;
+                    font-size: 14px;
+                    text-decoration: underline;
+                    text-underline-position: under;
+                }
+            }
+        }
+    }
+}
+
+// 비디오 상세 페이지
+// #videoViewPage {
+//     padding: 0;
+// }
+.video__view {
+    padding: 0;
+
+    .video__play {
+        width: 100%;
+        padding-bottom: 56.25%;
+        position: relative;
+    }
+    .video__info {
+
+        .video__title {
+            padding-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .video__channel {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            align-items: center;
+
+            .id {
+                font-weight: 700;
+                display: flex;
+
+                a {
+                    border-radius: 50px;
+                    padding: 7px 20px;
+                    border-radius: 30px;
+                    border: 1px solid var(--black300);
+                    color: var(--white);
+                    background-color: var(--black300);
+                }
+            }
+            .count {
+                span {
+                    border: 1px solid var(--black300);
+                    padding: 7px 20px;
+                    border-radius: 30px;
+                    margin-left: 10px;
+                    display: inline-flex;
+                    align-items: center;
+
+                    svg {
+                        width: 18px;
+                        height: 18px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .video__desc {
+            border-top: 1px solid var(--white400);
+            white-space: pre-line;
+            padding-top: 30px;
+        }
+
+    }
+}

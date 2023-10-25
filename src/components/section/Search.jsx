@@ -6,11 +6,11 @@ const Search = () => {
 			<div className="search__inner">
 				<label htmlFor="searchInput">검색</label>
 				<input 
-				type="search" 
-				id='searchInput' 
-				placeholder='검색어를 입력해주세요!'
-				autoComplete='off'
-				className='search__input'
+					type="search" 
+					id='searchInput' 
+					placeholder='검색어를 입력해주세요!'
+					autoComplete='off'
+					className='search__input'
 				/>
 			</div>
 		</div>

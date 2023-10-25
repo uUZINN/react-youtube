@@ -1,7 +1,16 @@
+#searchPage {
+    h2 {
+        margin-bottom: 1rem;
+
+        em {
+            font-weight: 700;
+        }
+    }
+}
 .search__inner {
     width: 100%;
-    padding: 17px 40px;
-    border: 1px solid var(--black600);
+    padding: 19px 40px;
+    border-bottom: 1px solid var(--white300);
 
     label {
         display: none;
